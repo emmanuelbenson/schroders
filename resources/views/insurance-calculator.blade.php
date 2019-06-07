@@ -80,7 +80,7 @@
                                         RESULT: <span id="calResult" style="font-weight: 500; font-size: 1.5em;"></span>
                                     </div>
                                 </form>
-                                
+
                             </div>
                         </div>
                     </div>
