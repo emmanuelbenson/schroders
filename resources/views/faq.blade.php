@@ -480,11 +480,7 @@
                                                 <p>
                                                     You must be a UK resident or been in uk at least for 60
                                                     days and 18 years of age at the time of applying.
-                                                    Upper age limits apply. Please read our
-                                                    <a href="https://www.legalandgeneral.com/life-cover/
-                                                    _resources/documents/policy-summary.pdf">
-                                                        Policy Summary PDF
-                                                    </a> for more details.
+                                                    Upper age limits apply. Please read our Policy Summary PDF for more details.
                                                 </p>
                                             </div>
                                         </div>

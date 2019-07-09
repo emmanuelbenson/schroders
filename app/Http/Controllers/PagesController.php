@@ -22,6 +22,21 @@ class PagesController extends Controller
         return view('services');
     }
 
+    public function travelInsurance()
+    {
+        return view('travel-insurance');
+    }
+
+    public function carMotorInsurance()
+    {
+        return view('car-motor-insurance');
+    }
+
+    public function homeHouseInsurance()
+    {
+        return view('home-house-insurance');
+    }
+
     public function lifeInsurance()
     {
         return view('life-insurance');
@@ -83,7 +98,14 @@ class PagesController extends Controller
 
     public function policy()
     {
-        return view('policy');
+        return response()
+            ->download(
+                public_path(
+                    'downloads/policy.PDF'
+                )
+            );
+//        return view('policy');
+
     }
 
     public function contact()

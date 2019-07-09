@@ -30,7 +30,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-6 address">
-                    <i class="ti-location-pin"></i> 2109 WS 09 Oxford Rd #127 ParkVilla Hills, MI 48334
+                    <i class="ti-location-pin"></i> 1 London Wall Place, London, ec2y 5au.uk.
                 </div>
                 <div class="col-sm-6 social">
                     <ul>
@@ -73,9 +73,15 @@
                     <li>
                         <a href="{{ route('faqs') }}">FAQs</a>
                     </li>
+                    @guest
                     <li>
                         <a href="{{ route('login') }}" class="btn-default">Login</a>
                     </li>
+                    @else
+                        <li>
+                            <a href="{{ route('home') }}">My Account</a>
+                        </li>
+                    @endguest
                 </ul>
             </div>
         </div>

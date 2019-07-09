@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\User;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -23,6 +24,31 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $userCounts = User::where('id', '!=', auth()->user()->id)
+            ->count();
+        $member = auth()->user();
+
+        $sectionA = null;
+        $sectionB = null;
+        $sectionC = null;
+        $details = null;
+        $policy = null;
+
+        if($member->policy){
+            $sectionA = $member->policy->sectionA;
+            $sectionB = $member->policy->sectionB;
+            $sectionC = $member->policy->sectionC;
+            $details = $member->policy->holderDetails;
+            $policy = $member->policy;
+        }
+
+        return view('home', compact([
+            'userCounts',
+            'sectionA',
+            'sectionB',
+            'sectionC',
+            'details',
+            'policy'
+        ]));
     }
 }

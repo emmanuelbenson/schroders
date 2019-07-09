@@ -7,10 +7,13 @@
                 <img src="{{ asset('assets/images/slider-img.jpg') }}" />
                 <div class="slide-info">
                     <div class="slide-con">
-                        <b>Healthcare</b>
-                        <h3>Health Insurance</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit fringilla ligula, nec congue leo pharetra in.</p>
-                        <a href="#" class="ti-arrow-right"></a>
+                        <b>Home/House Insurance</b>
+                        <h3>HOME/HOUSE INSURANCE</h3>
+                        <p>
+                            We have a long and proud history of home insurance expertise. We’ve been providing
+                            home insurance policies...
+                        </p>
+                        <a href="{{ route('home.house.insurance') }}" class="ti-arrow-right"></a>
                     </div>
                 </div>
             </li>
@@ -18,10 +21,13 @@
                 <img src="{{ asset('assets/images/slider-img1.jpg') }}" />
                 <div class="slide-info">
                     <div class="slide-con">
-                        <b>Lifecare</b>
-                        <h3>Life Insurance</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit fringilla ligula, nec congue leo pharetra in.</p>
-                        <a href="#" class="ti-arrow-right"></a>
+                        <b>Car/Motor Insurance</b>
+                        <h3>Car/Motor Insurance</h3>
+                        <p>
+                            Motor Insurance has been designed for drivers of multiple high value cars and has a
+                            number of features that...
+                        </p>
+                        <a href="{{ route('car.motor.insurance') }}" class="ti-arrow-right"></a>
                     </div>
                 </div>
             </li>
@@ -29,10 +35,14 @@
                 <img src="{{ asset('assets/images/slider-img2.jpg') }}" />
                 <div class="slide-info">
                     <div class="slide-con">
-                        <b>Healthcare</b>
+                        <b>Travels</b>
                         <h3>Travel Insurance</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit fringilla ligula, nec congue leo pharetra in.</p>
-                        <a href="#" class="ti-arrow-right"></a>
+                        <p>
+                            Trips abroad can be the experience of a lifetime and one of our biggest expenditures of
+                            the year. We understand this and provide specialist travel cover for when things don’t
+                            go to plan.
+                        </p>
+                        <a href="{{ route('travel.insurance') }}" class="ti-arrow-right"></a>
                     </div>
                 </div>
             </li>
